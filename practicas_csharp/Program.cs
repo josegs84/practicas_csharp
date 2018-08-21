@@ -11,50 +11,48 @@ namespace practicas_csharp
                 Console.WriteLine("\nPulsa cualquier tecla para finalizar");
                 Console.ReadKey();
             }
-            // Sacado de https://www.tutorialesprogramacionya.com/csharpya/detalleconcepto.php?codigo=129&inicio=0
-            // Problema 1
-            // Realizar la carga del lado de un cuadrado, mostrar por pantalla el perímetro del mismo (El perímetro de un cuadrado se calcula multiplicando el valor del lado por cuatro)
-            /*
-            Console.WriteLine("Introduce el valor del lado de un cuadrado: \n");
-            int lado_cuadrado = int.Parse(Console.ReadLine());
-            int perimetro = lado_cuadrado * 4;
-            Console.WriteLine("El perímetro es " + perimetro + ".");
-            Finalizar();
-            */
 
-            // Problema 2
-            // Escribir un programa en el cual se ingresen cuatro números, calcular e informar la suma de los dos primeros y el producto del tercero y el cuarto.
-            /*
-            const int kNum = 4;
-            int[] numeros = new int[kNum];
-            Console.WriteLine("Introduzca 4 números:\n");
-            for(int i = 0; i < numeros.Length; i++)
-            {
-                int id_numero = i + 1;
-                Console.WriteLine("Número " + id_numero.ToString() + "\n");
-                numeros[i] = int.Parse(Console.ReadLine());
-            }
-            Console.WriteLine("La suma del primer número (" + numeros[0] + ") y el segundo número (" + numeros[1] + ") es igual a " + (numeros[0]+numeros[1]) +".\n");
-            Console.WriteLine("El producto del tercer número (" + numeros[2] + ") y el cuarto número (" + numeros[3] + ") es igual a " + (numeros[2]*numeros[3]) +".\n");
-            Finalizar();
-            */
+            // Sacado de https://www.tutorialesprogramacionya.com/csharpya/
 
-            // Problema 3
-            // Realizar un programa que lea cuatro valores numéricos e informar su suma y promedio.
-            /*
-            const int kNum = 4;
-            int suma = 0, i = 0;
-            Console.WriteLine("Introduzca 4 números:\n");
-            for (i = 0; i < kNum; i++)
+            // UNIDAD 6
+            // Problema 1: 
+            // Realizar un programa que lea por teclado dos números, si el primero es mayor al segundo informar su suma y diferencia, en caso contrario informar el producto y la división del primero respecto al segundo.
+            /*            const int kNum = 2;
+                        int accion1, accion2;
+                        int[] numeros = new int[kNum];
+                        for (int i = 0; i < kNum; i++)
+                        {
+                            int posicion_actual = i + 1;
+                            Console.WriteLine("\nIntroduce el número "+ posicion_actual + ": ");
+                            numeros[i] = int.Parse(Console.ReadLine());
+                        }
+                        if (numeros[0] > numeros[1])
+                        {
+                            accion1 = numeros[0] + numeros[1];
+                            accion2 = numeros[0] - numeros[1];
+                        } else
+                        {
+                            accion1 = numeros[0] * numeros[1];
+                            accion2 = numeros[0] / numeros[1]; // Quiza debiera ser el mayor dividido entre el menor, pero como pone el primero...
+                        }
+                        Console.WriteLine("\nEfecto 1: " + accion1 + " -- Efecto 2: " + accion2 + ".");
+                        Finalizar();
+            */          // Problema 2:
+                        //  Se ingresan tres notas de un alumno, si el promedio es mayor o igual a siete mostrar un mensaje "Promocionado". 
+            const int kNotas = 3;
+            int[] notas = new int[kNotas];
+            int suma = 0;
+            for(int i = 0; i < kNotas; i++)
             {
-                int id_numero = i + 1;
-                Console.WriteLine("Número " + id_numero.ToString() + "\n");
-                suma += int.Parse(Console.ReadLine());
+                int numero = i + 1;
+                Console.WriteLine("\nIntroduce la nota "+numero+".");
+                notas[i] = int.Parse(Console.ReadLine());
+                suma += notas[i];
             }
-            double promedio = suma / kNum;
-            Console.WriteLine("La suma de todos los números es " + suma + ".\n El promedio es " + promedio + ".");
+            string promocion = (suma / kNotas) >= 7 ? "promocionado" : "no promocionado";
+            Console.WriteLine("\nLas notas del alumno son " + notas[0] + ", " + notas[1] + " y "+notas[2]+".");
+            Console.WriteLine("Alumno " + promocion + ".");
             Finalizar();
-            */
         }
     }
 }

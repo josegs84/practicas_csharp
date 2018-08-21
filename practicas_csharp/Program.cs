@@ -11,7 +11,7 @@ namespace practicas_csharp
                 Console.WriteLine("\nPulsa cualquier tecla para finalizar");
                 Console.ReadKey();
             }
-
+            // Sacado de https://www.tutorialesprogramacionya.com/csharpya/detalleconcepto.php?codigo=129&inicio=0
             // Problema 1
             // Realizar la carga del lado de un cuadrado, mostrar por pantalla el perímetro del mismo (El perímetro de un cuadrado se calcula multiplicando el valor del lado por cuatro)
             /*
@@ -41,6 +41,7 @@ namespace practicas_csharp
 
             // Problema 3
             // Realizar un programa que lea cuatro valores numéricos e informar su suma y promedio.
+            /*
             const int kNum = 4;
             int suma = 0, i = 0;
             Console.WriteLine("Introduzca 4 números:\n");
@@ -53,6 +54,7 @@ namespace practicas_csharp
             double promedio = suma / kNum;
             Console.WriteLine("La suma de todos los números es " + suma + ".\n El promedio es " + promedio + ".");
             Finalizar();
+            */
         }
     }
 }

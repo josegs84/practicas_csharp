@@ -24,6 +24,7 @@ namespace practicas_csharp
 
             // Problema 2
             // Escribir un programa en el cual se ingresen cuatro números, calcular e informar la suma de los dos primeros y el producto del tercero y el cuarto.
+            /*
             const int kNum = 4;
             int[] numeros = new int[kNum];
             Console.WriteLine("Introduzca 4 números:\n");
@@ -35,6 +36,22 @@ namespace practicas_csharp
             }
             Console.WriteLine("La suma del primer número (" + numeros[0] + ") y el segundo número (" + numeros[1] + ") es igual a " + (numeros[0]+numeros[1]) +".\n");
             Console.WriteLine("El producto del tercer número (" + numeros[2] + ") y el cuarto número (" + numeros[3] + ") es igual a " + (numeros[2]*numeros[3]) +".\n");
+            Finalizar();
+            */
+
+            // Problema 3
+            // Realizar un programa que lea cuatro valores numéricos e informar su suma y promedio.
+            const int kNum = 4;
+            int suma = 0, i = 0;
+            Console.WriteLine("Introduzca 4 números:\n");
+            for (i = 0; i < kNum; i++)
+            {
+                int id_numero = i + 1;
+                Console.WriteLine("Número " + id_numero.ToString() + "\n");
+                suma += int.Parse(Console.ReadLine());
+            }
+            double promedio = suma / kNum;
+            Console.WriteLine("La suma de todos los números es " + suma + ".\n El promedio es " + promedio + ".");
             Finalizar();
         }
     }

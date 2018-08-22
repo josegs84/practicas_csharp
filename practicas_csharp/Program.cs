@@ -28,7 +28,13 @@ namespace practicas_csharp
             // Problema 2
             // Desarrollar un programa que cargue los lados de un triángulo e implemente los siguientes métodos: 
             // inicializar los atributos, imprimir el valor del lado mayor y otro método que muestre si es equilátero o no.
-
+            /*
+            ud13p2 triangulo = new ud13p2();
+            triangulo.Iniciar();
+            triangulo.LadoMayor();
+            triangulo.EsEquilatero();
+            Finalizar();
+            */
         }
     }
 }

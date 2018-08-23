@@ -1,5 +1,5 @@
 ﻿using System;
-using practicas_csharp.unidad14;
+using practicas_csharp.unidad25;
 
 namespace practicas_csharp
 {
@@ -14,21 +14,22 @@ namespace practicas_csharp
             }
 
             // Sacado de https://www.tutorialesprogramacionya.com/csharpya/
-            // UNIDAD 14
-            // Declaración de métodos.
-            // Ejemplo 1: Confeccionar una clase que permita ingresar valores enteros por teclado y nos muestre la tabla de multiplicar de dicho valor. Finalizar el programa al ingresar el -1.
+            // UNIDAD 25 - Constructor de la clase
+            // Problema 1: Confeccionar una clase que represente un empleado. Definir como atributos su nombre y su sueldo. 
+            // En el constructor cargar los atributos y luego en otro método imprimir sus datos y por último uno que imprima un mensaje si debe pagar impuestos (si el sueldo supera a 3000)
             /*
-            ud14p1 calculo = new ud14p1();
-            calculo.Inicializar();
+            ud25p1 hombre = new ud25p1("Jose", 3500);
+            hombre.ImprimirDatos();
             Finalizar();
             */
-            // Ejemplo 2: Confeccionar una clase que permita ingresar tres valores por teclado. Luego mostrar el mayor y el menor.
-            /*
-            ud14p2 numeros = new ud14p2();
-            numeros.Iniciar();
-            numeros.MostrarMayorYMenor();
+            // Problema 2: Implementar la clase operaciones. Se deben cargar dos valores enteros en el constructor, calcular su suma, resta, multiplicación y división, 
+            // cada una en un método, imprimir dichos resultados.
+            ud25p2 calculadora = new ud25p2(5, 5);
+            calculadora.Multiplicar();
+            calculadora.Sumar();
+            calculadora.Division();
+            calculadora.Restar();
             Finalizar();
-            */
         }
     }
 }

@@ -6,6 +6,8 @@ namespace practicas_csharp.unidad13
 {
     class ud13
     {
+        // UNIDAD 13
+        // Declaración de una clase y definición de objetos
         // Problema 1
         // Confeccionar una clase que permita carga el nombre y la edad de una persona. Mostrar los datos cargados. Imprimir un mensaje si es mayor de edad (edad>=18)
         /*

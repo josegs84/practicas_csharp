@@ -8,6 +8,7 @@ namespace practicas_csharp.unidad26
     {
         private int numero;
         private static Random aleatorio;
+
         public dados()
         {
             aleatorio = new Random();

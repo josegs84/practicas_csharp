@@ -17,6 +17,7 @@ namespace practicas_csharp.unidad26
             {
                 correcto = int.TryParse(preguntar("Introduzca la antiguedad"), out antiguedad);
             } while (!correcto);
+            Console.WriteLine("El socio {0} lleva {1} años en el club",nombre,antiguedad);
         }
 
         public string preguntar(string dato)

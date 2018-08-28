@@ -15,7 +15,6 @@ namespace practicas_csharp.unidad26
             cant_tiradas = 0;
             numero = 0;
             seguir = true;
-            
         }
 
         public void comenzar()
